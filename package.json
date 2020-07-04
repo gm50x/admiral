@@ -1,9 +1,10 @@
 {
-  "name": "pg-functional-example",
+  "name": "funky",
   "version": "1.0.0",
-  "description": "",
+  "description": "A super simple example of using pg (PostgresClient) in a functional way.",
   "main": "index.js",
   "scripts": {
+    "start":"node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
