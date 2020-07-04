@@ -3,15 +3,9 @@ module.exports = {
         query: async (sql, parameters) => {
             const client = new Client({ database, user, password, host })
             await client.connect()
-            return new Promise(async (resolve, reject) => {
-                client.query(sql, parameters, (err, res) => {
-                    client.end()
-                    if (!err)
-                        resolve(res.rows)
-                    else
-                        reject(new Error(err.message))
-                })
-            })
+            const result = await client.query(sql, parameters)
+            client.end()
+            return result.rows
         }
     })
 }
