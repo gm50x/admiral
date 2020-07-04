@@ -1,8 +1,8 @@
 const { getAllUsers } = require('../Core')
 
 module.exports = async (req, res) => {
-    const { page, pageSize } = req.query
-
-    const users = await getAllUsers({ page: page ? Number(page) : page, pageSize: pageSize ? Number(pageSize) : pageSize })
+    const page = Number(req.query.page) || undefined
+    const pageSize = Number(req.query.pageSize) || undefined
+    const users = await getAllUsers({ page, pageSize })
     return res.status(200).json(users)
 }
