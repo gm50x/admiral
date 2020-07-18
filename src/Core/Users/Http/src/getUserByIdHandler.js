@@ -1,6 +1,4 @@
-const { getUserById } = require('../Core')
-
-module.exports = async (req, res) => {
+module.exports = async (req, res, n, getUserById = require('../../Core').getUserById) => {
     const { id } = req.params
 
     if (!id) {

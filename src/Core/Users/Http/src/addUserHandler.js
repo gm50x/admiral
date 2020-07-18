@@ -1,6 +1,4 @@
-const { addUser } = require('../Core')
-
-module.exports = async (req, res) => {
+module.exports = async (req, res, n, addUser = require('../../Core').addUser) => {
     const { name, birthdate } = req.body
 
     if (!name || !birthdate) {
