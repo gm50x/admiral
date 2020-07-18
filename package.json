@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js",
-    "test": "mocha /tests --recursive"
+    "dev": "NODE_ENV=DEVELOPMENT nodemon index.js",
+    "test": "NODE_ENV=TEST_RUNNER mocha tests --recursive"
   },
   "keywords": [],
   "author": "",
