@@ -5,7 +5,6 @@ const { getAllUsers } = require('../../../../src/Core/Users')
 const testName = 'getAllUsers'
 
 const output = {}
-const repository = {}
 
 describe(`Users/Core/${testName}`, () => {
     it(`Should be a function`, async () => {
@@ -14,15 +13,14 @@ describe(`Users/Core/${testName}`, () => {
     })
 
     it(`Should not throw on success`, async () => {
-        repository.getAllUsers = () => Promise.resolve()
-        await getAllUsers({ repository }).catch(err => output.err = err || true)
+
+        await getAllUsers({ getAllUsers: () => Promise.resolve() }).catch(err => output.err = err || true)
         const actual = output.err === undefined
         strictEqual(actual, true, `${testName} threw on success`)
     })
 
     it(`Should throw on failure`, async () => {
-        repository.getAllUsers = () => Promise.reject()
-        await getAllUsers({ repository }).catch(err => output.err = err || true)
+        await getAllUsers({ getAllUsers: () => Promise.reject() }).catch(err => output.err = err || true)
         const actual = output.err !== undefined
         strictEqual(actual, true, `${testName} did not throw on failure`)
     })

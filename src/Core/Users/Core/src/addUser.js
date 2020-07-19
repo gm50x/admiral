@@ -1,3 +1,3 @@
-module.exports = async ({ name, birthdate, repository = require('../../Repository') }) => {
-    return await repository.addUser({ user: { name, birthdate } })
+module.exports = async ({ name, birthdate, addUser = require('../../Repository').addUser }) => {
+    return await addUser({ user: { name, birthdate } })
 }

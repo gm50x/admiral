@@ -1,3 +1,3 @@
-module.exports = async ({ page, pageSize, repository = require('../../Repository') }) => {
-    return await repository.getAllUsers({ page, pageSize })
+module.exports = async ({ page, pageSize, getAllUsers = require('../../Repository').getAllUsers }) => {
+    return await getAllUsers({ page, pageSize })
 }

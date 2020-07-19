@@ -1,3 +1,3 @@
-module.exports = async ({ id, repository = require('../../Repository') }) => {
-    return await repository.getUserById({ id })
+module.exports = async ({ id, getUserById = require('../../Repository').getUserById }) => {
+    return await getUserById({ id })
 }
