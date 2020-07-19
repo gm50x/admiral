@@ -18,6 +18,21 @@ Yet another Node-Postgres-Express-Mocha-API
         npm install
         npm test
 
+* [OR] run with Docker
+
+        docker-compose up --build
+
+    Then, run the sql script is /misc to create the schema and insert some garbage value there
+
+* Endpoints
+
+        GET /api/v1/samples
+        GET /api/v1/users
+        GET /api/v1/users/{id}
+        POST /api/v1/users
+
+    Postman Collection in /misc
+
 # TODO:
 [IN-PROGRESS] Write a decent README file\
 [TODO] Add docker-compose\

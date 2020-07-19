@@ -1,0 +1,33 @@
+version: '3'
+services:
+  funky_server:
+    build:
+      context: .
+      args:
+          - PORT=${PORT}
+    image: funky-api
+    depends_on:
+      - funky_database
+    environment:
+      NODE_ENV: ${ENV}
+      PORT: ${PORT}
+      DB_USER: ${DB_USER}
+      DB_PASS: ${DB_PASS}
+      DB_HOST: ${DB_HOST}
+    ports:
+      - ${PORT}:${PORT}
+    container_name: 'funky_api'
+    networks:
+      - funky_net
+  funky_database:
+    image: postgres:alpine
+    environment:
+      POSTGRES_PASSWORD: ${DB_PASS}
+    ports:
+      - 5432:5432
+    container_name: 'funky_db'
+    networks:
+      - funky_net
+networks:
+  funky_net:
+    driver: bridge
