@@ -26,7 +26,7 @@ Yet another Node-Postgres-Express-Mocha-API
 
 * Stoping the docker environment
 
-    npm run docker:stop
+        npm run docker:stop
 
 * Endpoints
 
