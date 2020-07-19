@@ -1,13 +1,26 @@
-# PG - Functional Example
+# Super Simple CRUD API
+Yet another Node-Postgres-Express-Mocha-API
 
-A super simple example of using pg (PostgresClient) in a functional way.
+# Getting Started
+* start your database (we are using Postgres)
+* start the project (on development mode)
 
-Database (Postgres running in docker) with simple funky schema and users table.
+        npm install
+        npm run dev
 
-- getPostgresClient({Client, database, user, password, host }): Injectable Client(pg class) and db configs => exposes a query method
-- getAllUsers({client}): Injectable client => knows the sql query and returns all users
+* [OR] start the project
 
+        npm install
+        npm start
 
-# Next Steps:
-[ ] Add unit tests
-[ ] Add Docker support
+* [OR] run the tests
+
+        npm install
+        npm test
+
+# TODO:
+[IN-PROGRESS] Write a decent README file\
+[TODO] Add docker-compose\
+[TODO] Add more endpoints\
+[IN-PROGRESS] Add unit tests\
+[TODO] Add integration non bell ringing tests
