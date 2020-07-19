@@ -3,12 +3,12 @@ Yet another Node-Postgres-Express-Mocha-API
 
 # Getting Started
 * start your database (we are using Postgres)
-* start the project (on development mode)
+* start the project (on development mode, port 3000 with nodemon)
 
         npm install
         npm run dev
 
-* [OR] start the project
+* [OR] start the project (port 3000)
 
         npm install
         npm start
@@ -18,7 +18,7 @@ Yet another Node-Postgres-Express-Mocha-API
         npm install
         npm test
 
-* [OR] run with Docker
+* [OR] run with Docker (port 3001)
 
         docker-compose up --build
 

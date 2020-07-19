@@ -9,13 +9,13 @@ services:
     depends_on:
       - funky_database
     environment:
-      NODE_ENV: ${ENV}
+      NODE_ENV: ${NODE_ENV}
       PORT: ${PORT}
       DB_USER: ${DB_USER}
       DB_PASS: ${DB_PASS}
       DB_HOST: ${DB_HOST}
     ports:
-      - ${PORT}:${PORT}
+      - 3001:${PORT}
     container_name: 'funky_api'
     networks:
       - funky_net
