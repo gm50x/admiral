@@ -6,6 +6,8 @@
   "scripts": {
     "start": "node index.js",
     "dev": "NODE_ENV=DEVELOPMENT nodemon index.js",
+    "docker:start": "docker-compose up --build",
+    "docker:stop":"docker-compose down",
     "test": "NODE_ENV=TEST_RUNNER mocha tests --recursive"
   },
   "keywords": [],

@@ -20,9 +20,13 @@ Yet another Node-Postgres-Express-Mocha-API
 
 * [OR] run with Docker (port 3001)
 
-        docker-compose up --build
+        npm run docker:start
 
     Then, run the sql script is /misc to create the schema and insert some garbage value there
+
+* Stoping the docker environment
+
+    npm run docker:stop
 
 * Endpoints
 
@@ -35,7 +39,7 @@ Yet another Node-Postgres-Express-Mocha-API
 
 # TODO:
 [IN-PROGRESS] Write a decent README file\
-[TODO] Add docker-compose\
-[TODO] Add more endpoints\
+[DONE] Add docker-compose\
+[DONE] Docker/Dev environments running in parallel\
 [IN-PROGRESS] Add unit tests\
 [TODO] Add integration non bell ringing tests
