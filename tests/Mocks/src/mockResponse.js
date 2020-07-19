@@ -1,8 +1,9 @@
-module.exports = {
-    status: (st) => {
-        st = st
-        return {
-            json: (data) => data
-        }
-    }
+const res = {
+    status: st => {
+        res.statusCode = st
+        return res
+    },
+    json: data => data
 }
+
+module.exports = res

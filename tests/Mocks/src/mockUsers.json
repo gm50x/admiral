@@ -1,0 +1,102 @@
+[
+    {
+        "id": 1,
+        "name": "Nathan Drake",
+        "from": "Uncharted"
+    },
+    {
+        "id": 2,
+        "name": "Joel",
+        "from": "The Last of Us"
+    },
+    {
+        "id": 3,
+        "name": "Kratos",
+        "from": "God of War"
+    },
+    {
+        "id": 4,
+        "name": "Ellie",
+        "from": "The Last of Us"
+    },
+    {
+        "id": 5,
+        "name": "Crash Bandicoot",
+        "from": "Crash Bandicoot"
+    },
+    {
+        "id": 6,
+        "name": "Aloy",
+        "from": "Horizon: Zero Dawn"
+    },
+    {
+        "id": 7,
+        "name": "Spider-Man",
+        "from": "Marvel's Spider-Man"
+    },
+    {
+        "id": 8,
+        "name": "Cloud Strife",
+        "from": "Final Fantasy VII"
+    },
+    {
+        "id": 9,
+        "name": "Spyro",
+        "from": "Spyro, the Dragon"
+    },
+    {
+        "id": 10,
+        "name": "Sackboy",
+        "from": "Little Big Planet"
+    },
+    {
+        "id": 11,
+        "name": "Roxas",
+        "from": "Kingdom Hearts"
+    },
+    {
+        "id": 12,
+        "name": "Sora",
+        "from": "Kingdom Hearts"
+    },
+    {
+        "id": 13,
+        "name": "Tess",
+        "from": "The Last of Us"
+    },
+    {
+        "id": 14,
+        "name": "Ryu",
+        "from": "Street Fighter"
+    },
+    {
+        "id": 15,
+        "name": "Delsin Rowe",
+        "from": "inFamous: Second Son"
+    },
+    {
+        "id": 16,
+        "name": "Joker Atlus",
+        "from": "Persona 5"
+    },
+    {
+        "id": 17,
+        "name": "Pagan Min",
+        "from": "Far Cry 4"
+    },
+    {
+        "id": 18,
+        "name": "Rafe Adler",
+        "from": "Uncharted"
+    },
+    {
+        "id": 19,
+        "name": "Geralt of Rivia",
+        "from": "The Witcher"
+    },
+    {
+        "id": 20,
+        "name": "Abigail \"Fetch\" Walker",
+        "from": "inFamous: Second Son"
+    }
+]
