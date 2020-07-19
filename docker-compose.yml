@@ -1,13 +1,13 @@
 version: '3'
 services:
-  funky_server:
+  admiral_server:
     build:
       context: .
       args:
           - PORT=${PORT}
-    image: funky-api
+    image: admiral-api
     depends_on:
-      - funky_database
+      - admiral_database
     environment:
       NODE_ENV: ${NODE_ENV}
       PORT: ${PORT}
@@ -16,18 +16,18 @@ services:
       DB_HOST: ${DB_HOST}
     ports:
       - 3001:${PORT}
-    container_name: 'funky_api'
+    container_name: 'admiral_api'
     networks:
-      - funky_net
-  funky_database:
+      - admiral_net
+  admiral_database:
     image: postgres:alpine
     environment:
       POSTGRES_PASSWORD: ${DB_PASS}
     ports:
       - 5432:5432
-    container_name: 'funky_db'
+    container_name: 'admiral_db'
     networks:
-      - funky_net
+      - admiral_net
 networks:
-  funky_net:
+  admiral_net:
     driver: bridge

@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "9c4df01b-344b-4be1-9cad-77e8530c2f99",
-		"name": "Funky",
+		"name": "Admiral",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -25,11 +25,11 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:3000/api/v1/users",
+					"raw": "localhost:3001/api/v1/users",
 					"host": [
 						"localhost"
 					],
-					"port": "3000",
+					"port": "3001",
 					"path": [
 						"api",
 						"v1",
@@ -71,11 +71,11 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:3000/api/v1/users/3",
+					"raw": "localhost:3001/api/v1/users/3",
 					"host": [
 						"localhost"
 					],
-					"port": "3000",
+					"port": "3001",
 					"path": [
 						"api",
 						"v1",
@@ -115,11 +115,11 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:3000/api/v1/users",
+					"raw": "localhost:3001/api/v1/users",
 					"host": [
 						"localhost"
 					],
-					"port": "3000",
+					"port": "3001",
 					"path": [
 						"api",
 						"v1",
@@ -149,11 +149,11 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:3000/api/v1/users?page=1&pageSize=2",
+					"raw": "localhost:3001/api/v1/users?page=1&pageSize=2",
 					"host": [
 						"localhost"
 					],
-					"port": "3000",
+					"port": "3001",
 					"path": [
 						"api",
 						"v1",
@@ -193,11 +193,11 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:3000/api/v1/samples",
+					"raw": "localhost:3001/api/v1/samples",
 					"host": [
 						"localhost"
 					],
-					"port": "3000",
+					"port": "3001",
 					"path": [
 						"api",
 						"v1",
